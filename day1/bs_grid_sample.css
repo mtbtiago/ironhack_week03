@@ -1,0 +1,20 @@
+.container {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  background: #efefef;
+  box-shadow: inset 0 0 0 1px grey;
+}
+
+.container,
+.row > div {
+  border: 1px solid grey;
+}
+
+.row > div {
+  background: white;
+}
+
+.row > div > .row > div {
+  color: white;
+  background: black;
+}
