@@ -1,0 +1,241 @@
+body {
+  font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+  font-size: 12px;
+}
+.main_logo {
+  display: inline-block;
+  margin-top: 4px;
+  margin-left: 14px;
+}
+.action_buttons {
+  margin-left: 16px;
+}
+ul.nav{
+  width:100%;
+}
+ul.nav > li{
+  display: inline-block;
+}
+ul.nav > li.brand{
+  float:left;
+}
+.my_nav {
+  display: inline-block;
+  padding-right: 16px;
+  /*outline:1px solid green;*/
+}
+/*.navbar{
+  outline:1px solid red;
+}
+.navbar *{
+  outline:1px solid blue;
+}
+*/.my_vert_center {
+  display: block;
+  vertical-align: middle;
+  float: left;
+}
+.btn_compose {
+  width: 100%;
+  font-size: 2em;
+  margin-bottom: 16px;
+}
+.email {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 10px;
+  border-radius: 10px;
+  background-color: #DEDEDE;
+}
+.glyphicon {
+  margin-right: 4px;
+}
+.btn_section {
+  margin-top: 4px;
+  width: 100%
+}
+.tags {
+  margin-top: 16px;
+}
+.section_header {
+  margin: 28px 4px;
+  font-size: 2.5em;
+  width: 100%;
+}
+.section {
+  margin-bottom: 16px;
+  width: 100%;
+}
+.group
+/* -------- header styles -------- */
+/* -------- sidebar email styles -------- */
+
+#sidebar {
+  width: 180px;
+  padding: 10px;
+  float: left;
+  background-color: #FAFAFA;
+  margin-top: 10px;
+}
+#compose {
+  background-color: #DF001A;
+  padding: 5px;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer;
+}
+#main-labels {
+  margin: 5px 0;
+}
+#main-labels li {
+  font-size: 14px;
+  line-height: 25px;
+}
+#personal-labels {
+  padding-bottom: 15px;
+  border-bottom: 1px dotted #5DC9B8;
+}
+#personal-labels li {
+  font-size: 14px;
+  line-height: 25px;
+  color: #7B7B7B;
+}
+/* -------- main email styles -------- */
+
+#main {
+  width: 800px;
+  background-color: #FAFAFA;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  min-height: 545px;
+}
+#email-actions {
+  margin: 10px;
+  height: 25px;
+  text-align: right;
+}
+#email-actions li {
+  display: inline;
+  padding: 5px;
+  border: 1px solid #7B7B7B;
+}
+#email-actions li#back {
+  float: left;
+  display: none;
+}
+.selectors {
+  float: right;
+  margin-top: 14px;
+}
+.checked {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid grey;
+  float: left;
+  margin-top: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.starred {
+  background-image: url(images/star4.png);
+  background-repeat: no-repeat;
+  width: 19px;
+  height: 19px;
+  float: left;
+}
+.contentInfo {
+  width: 700px;
+  float: left;
+  cursor: pointer;
+}
+/* -------- footer styles -------- */
+
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: #DEDEDE;
+  height: 40px;
+  z-index: 10;
+}
+#footer div {
+  float: left;
+}
+/* -------- form email -------- */
+
+#blank-email {
+  width: 550px;
+  min-height: 300px;
+  background-color: #FAFAFA;
+  position: absolute;
+  bottom: 0px;
+  right: 80px;
+  border: 1px dotted #7B7B7B;
+  display: none;
+}
+#blank-close {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  cursor: pointer;
+}
+#blank-bottom {
+  margin-top: 30px;
+}
+#send {
+  width: 80px;
+  padding: 5px;
+  background-color: #5DC9B8;
+  cursor: pointer;
+}
+#trash {
+  width: 80px;
+  padding: 5px;
+  background-color: red;
+  cursor: pointer;
+}
+/* -------- read email -------- */
+
+#readEmail {
+  padding: 20px;
+  display: none;
+}
+.fromInside {
+  font-size: 18px;
+  font-weight: bold;
+}
+.subjectInside {
+  font-size: 14px;
+  margin-top: 10px;
+  background-color: #DEDEDE;
+  padding: 10px;
+}
+.allEmailText {
+  font-size: 12px;
+  line-height: 24px;
+  text-align: justify;
+}
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+
+body.loading {
+  overflow: hidden;
+}
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+
+body.loading .modal {
+  display: block;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba( 255, 255, 255, .8) url('./wait.gif') 50% 50% no-repeat;
+}

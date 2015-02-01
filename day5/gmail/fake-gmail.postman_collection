@@ -1,0 +1,158 @@
+{
+	"id": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+	"name": "mail",
+	"description": "https://vast-earth-2490.herokuapp.com/\n\nhttps://github.com/luisrovirosa/teaching\n\nServer: https://github.com/luisrovirosa/gmail-api-fake-node",
+	"order": [],
+	"folders": [
+		{
+			"id": "d5b017d1-9c98-dfdd-ca0a-c9e2c2b14598",
+			"name": "General",
+			"description": "",
+			"order": [
+				"b73f1497-554c-7452-7eb3-82ea5f674c46",
+				"0717856b-97ed-3a8a-0d18-406bf3943350",
+				"4c17301b-2289-5a1a-dcac-f2b1eac3748e",
+				"16e9a9af-c97f-7d40-88ef-53278a6ea624",
+				"e8e05f35-a6d7-9493-3710-31c0efa66b03"
+			],
+			"collection_name": "mail",
+			"collection_id": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4"
+		}
+	],
+	"timestamp": 1422609197253,
+	"synced": false,
+	"remoteLink": "",
+	"requests": [
+		{
+			"id": "0717856b-97ed-3a8a-0d18-406bf3943350",
+			"headers": "",
+			"url": "https://vast-earth-2490.herokuapp.com/email/4567",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "user",
+					"value": "@manolito",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "passw",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "email id = 4567",
+			"description": "{\"from\":\"Sheldon Cooper\",\"subject\":\"I'm going to win the Noble price\",\"preview\":\"Dear poor minds, probably you...\",\"starred\":\"false\",\"labels\":[\"friends\"],\"new\":false,\"email\":\"Dear poor minds, probably you...Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per. Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libris consulatu. No mei ferri graeco dicunt, ad cum veri accommodare. Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque. Eos vocibus deserunt quaestio ei. Blandit incorrupte quaerendum in quo, nibh impedit id vis, vel no nullam semper audiam. Ei populo graeci consulatu mei, has ea stet modus phaedrum. Inani oblique ne has, duo et veritus detraxit. Tota ludus oratio ea mel, offendit persequeris ei vim. Eos dicat oratio partem ut, id cum ignota senserit intellegat. Sit inani ubique graecis ad, quando graecis liberavisse et cum, dicit option eruditi at duo. Homero salutatus suscipiantur eum id, tamquam voluptaria expetendis ad sed, nobis feugiat similique usu ex. Eum hinc argumentum te, no sit percipit adversarium, ne qui feugiat persecuti. Odio omnes scripserit ad est, ut vidit lorem maiestatis his, putent mandamus gloriatur ne pro. Oratio iriure rationibus ne his, ad est corrumpit splendide. Ad duo appareat moderatius, ei falli tollit denique eos. Dicant evertitur mei in, ne his deserunt perpetua sententiae, ea sea omnes similique vituperatoribus. Ex mel errem intellegebat comprehensam, vel ad tantas antiopam delicatissimi, tota ferri affert eu nec. Legere expetenda pertinacia ne pro, et pro impetus persius assueverit.\"}",
+			"descriptionFormat": "html",
+			"time": 1422609366842,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+			"synced": false
+		},
+		{
+			"id": "16e9a9af-c97f-7d40-88ef-53278a6ea624",
+			"headers": "",
+			"url": "https://vast-earth-2490.herokuapp.com/labels",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "get labels",
+			"description": "{\"friends\":{\"unread\":0},\"professional\":{\"unread\":0},\"events\":{\"unread\":1},\"things\":{\"unread\":0}}",
+			"descriptionFormat": "html",
+			"time": 1422609574228,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+			"synced": false
+		},
+		{
+			"id": "4c17301b-2289-5a1a-dcac-f2b1eac3748e",
+			"headers": "",
+			"url": "https://vast-earth-2490.herokuapp.com/email",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"name": "send email",
+			"description": "Simulates the process of sending email\n",
+			"descriptionFormat": "html",
+			"time": 1422609487963,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+			"synced": false
+		},
+		{
+			"id": "b73f1497-554c-7452-7eb3-82ea5f674c46",
+			"headers": "",
+			"url": "https://vast-earth-2490.herokuapp.com/email/new",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "user",
+					"value": "@manolito",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "passw",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "check mail",
+			"description": "{\"12121\":{\"from\":\"EJZWrdktq2 6OMQOypuPT\",\"subject\":\"AgF2bg8EOSwokBz29KYs\",\"preview\":\"37o1W7hgxwJylBd98Zfk\",\"started\":false,\"labels\":[],\"new\":true}}",
+			"descriptionFormat": "html",
+			"time": 1422609296899,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+			"synced": false
+		},
+		{
+			"id": "e8e05f35-a6d7-9493-3710-31c0efa66b03",
+			"headers": "",
+			"url": "https://vast-earth-2490.herokuapp.com/labels/events",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"name": "get mails of a label",
+			"description": "{\"123123\":{\"from\":\"QhsxIaqxZj IaBY1RZ7tm\",\"subject\":\"wfj86Szg4juPcsjYhFFI\",\"preview\":\"f78zpriWGkQwBa69jaZ9\",\"started\":false,\"labels\":[],\"new\":true,\"email\":\"f78zpriWGkQwBa69jaZ9Lorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per. Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libris consulatu. No mei ferri graeco dicunt, ad cum veri accommodare. Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque. Eos vocibus deserunt quaestio ei. Blandit incorrupte quaerendum in quo, nibh impedit id vis, vel no nullam semper audiam. Ei populo graeci consulatu mei, has ea stet modus phaedrum. Inani oblique ne has, duo et veritus detraxit. Tota ludus oratio ea mel, offendit persequeris ei vim. Eos dicat oratio partem ut, id cum ignota senserit intellegat. Sit inani ubique graecis ad, quando graecis liberavisse et cum, dicit option eruditi at duo. Homero salutatus suscipiantur eum id, tamquam voluptaria expetendis ad sed, nobis feugiat similique usu ex. Eum hinc argumentum te, no sit percipit adversarium, ne qui feugiat persecuti. Odio omnes scripserit ad est, ut vidit lorem maiestatis his, putent mandamus gloriatur ne pro. Oratio iriure rationibus ne his, ad est corrumpit splendide. Ad duo appareat moderatius, ei falli tollit denique eos. Dicant evertitur mei in, ne his deserunt perpetua sententiae, ea sea omnes similique vituperatoribus. Ex mel errem intellegebat comprehensam, vel ad tantas antiopam delicatissimi, tota ferri affert eu nec. Legere expetenda pertinacia ne pro, et pro impetus persius assueverit.\"},\"223344\":{\"from\":\"bg9gCmN9oo 3HWOZn3h3h\",\"subject\":\"3dD7lRPgyqT5Uib2qJZz\",\"preview\":\"AByjw5m7qSuYU304tnBG\",\"started\":false,\"labels\":[],\"new\":true,\"email\":\"AByjw5m7qSuYU304tnBGLorem ipsum ad his scripta blandit partiendo, eum fastidii accumsan euripidis in, eum liber hendrerit an. Qui ut wisi vocibus suscipiantur, quo dicit ridens inciderint id. Quo mundi lobortis reformidans eu, legimus senserit definiebas an eos. Eu sit tincidunt incorrupte definitionem, vis mutat affert percipit cu, eirmod consectetuer signiferumque eu per. In usu latine equidem dolores. Quo no falli viris intellegam, ut fugit veritus placerat per. Ius id vidit volumus mandamus, vide veritus democritum te nec, ei eos debet libris consulatu. No mei ferri graeco dicunt, ad cum veri accommodare. Sed at malis omnesque delicata, usu et iusto zzril meliore. Dicunt maiorum eloquentiam cum cu, sit summo dolor essent te. Ne quodsi nusquam legendos has, ea dicit voluptua eloquentiam pro, ad sit quas qualisque. Eos vocibus deserunt quaestio ei. Blandit incorrupte quaerendum in quo, nibh impedit id vis, vel no nullam semper audiam. Ei populo graeci consulatu mei, has ea stet modus phaedrum. Inani oblique ne has, duo et veritus detraxit. Tota ludus oratio ea mel, offendit persequeris ei vim. Eos dicat oratio partem ut, id cum ignota senserit intellegat. Sit inani ubique graecis ad, quando graecis liberavisse et cum, dicit option eruditi at duo. Homero salutatus suscipiantur eum id, tamquam voluptaria expetendis ad sed, nobis feugiat similique usu ex. Eum hinc argumentum te, no sit percipit adversarium, ne qui feugiat persecuti. Odio omnes scripserit ad est, ut vidit lorem maiestatis his, putent mandamus gloriatur ne pro. Oratio iriure rationibus ne his, ad est corrumpit splendide. Ad duo appareat moderatius, ei falli tollit denique eos. Dicant evertitur mei in, ne his deserunt perpetua sententiae, ea sea omnes similique vituperatoribus. Ex mel errem intellegebat comprehensam, vel ad tantas antiopam delicatissimi, tota ferri affert eu nec. Legere expetenda pertinacia ne pro, et pro impetus persius assueverit.\"}}",
+			"descriptionFormat": "html",
+			"time": 1422609612260,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"collectionId": "2a0f58a1-26c0-3ee2-dbc5-5df2c6728ad4",
+			"synced": false
+		}
+	]
+}

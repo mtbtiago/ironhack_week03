@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cutre Web Mail</title>
+  <meta charset="UTF-8">
+  <script src="../../jquery/jquery.min.js"></script>
+  <link rel="stylesheet" href="../../bootstrap-3.3.2-dist/css/bootstrap.css">
+  <script src="../../bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <ul class="nav row">
+      <li>
+        <img class="main_logo brand" src="images/main_logo.png" alt="">
+      </li>
+      <li>
+        <div class="action_buttons my_nav">
+          <div id="btn_update" class="btn btn-info btn-sm">Update</div>
+          <div id="btn_select_all" class="btn btn-default btn-sm">Select all</div>
+          <!-- glyphicon glyphicon-trash -->
+          <div id="btn_send_to_trash" class="btn btn-danger btn-sm">
+            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Send to trash
+          </div>
+        </div>
+      </li>
+      <li>
+        <form class="navbar-form navbar-right my_nav" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search">
+          </div>
+          <button type="submit" class="btn btn-default">Search</button>
+        </form>
+      </li>
+    </ul>
+    <div id="down_nav" class="row">
+      <div id="side_left" class="col-sm-3">
+        <button id="btn_compose" class="btn_compose btn-danger">Compose</button>
+        <div id="folders" class="section btn-group-vertical" role="group">
+          <h2 class="section_header label label-primary">Folders</h2>
+          <button type="button" class="btn btn-default btn-sm btn_section">Spam</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Inbox</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Starred</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Sent mail</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Drafts</button>
+        </div>
+        <div id="tags" class="section btn-group-vertical" role="group">
+          <h2 class="section_header label label-info">Tags</h2>
+          <div id="tags_list">
+            <!--<button id="things" type="button" class="btn btn-default btn-sm btn_section btn_tag">Things</button>-->
+          </div>
+        </div>
+        <div id="chat" class="section btn-group-vertical" role="group">
+          <h2 class="section_header label label-warning">Chat</h2>
+          <button type="button" class="btn btn-default btn-sm btn_section">Sheldon Cooper</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Charly Crews</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Jack Gallagher</button>
+          <button type="button" class="btn btn-default btn-sm btn_section">Richard Castle</button>
+        </div>
+      </div>
+      <div id="email_list" class="col-sm-9">
+        <ul id="emails">
+          <!-- <li data-id="1234" class="email">
+            <div id="1" class="checked" data-checked="false"></div>
+            <div class="starred" data-starred="true"></div>
+            <div class="from">Charlie Crews</div>
+            <div class="subject">I'm back</div>
+            <div class="preview">After been 12 years in prison...</div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div id="blank-email">
+    <div id="blank-close"></div>
+    <form id="new_email">
+      <label for="blank-to">To</label>
+      <input id="blank-to" name="to" type="text" value="">
+      <label for="blank-from">From</label>
+      <input id="blank-from" name="from" type="text" value="">
+      <label for="blank-subject">Subject</label>
+      <input id="blank-subject" name="subject" type="text" value="">
+      <textarea id="blank-content" name="content" rows="4" cols="50"></textarea>
+
+      <div id="blank-bottom">
+        <button type="button" class="btn btn-success btn-sm" id="btn_send_email">Send</button>
+        <button type="button" class="btn btn-danger btn-sm" id="btn_cancel_email">Cancel</button>
+      </div>
+    </form>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="email.js"></script>
+  <script>
+  // $("#btn_select_all").click(function(e){
+  //   $(".email")
+  // })
+  </script>
+</body>
+
+</html>
