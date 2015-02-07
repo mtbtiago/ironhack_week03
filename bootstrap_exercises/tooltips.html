@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- http://www.taringa.net/posts/videos/17532834/Curso-de-Bootstrap-3-1-Video-Tutoriales-Espanol.html -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tooltips</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../jquery/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.css">
+  <script src="../bootstrap-3.3.2-dist/js/bootstrap.js">
+  </script>
+</head>
+
+<body>
+  <div class="container" style="margin-top: 60px; width:720px;">
+    <ul>
+      <li><a href="#" class="mitooltip" title="Izquierda" data-placement="left">Izquierda</a>
+      </li>
+      <li><a href="#" class="mitooltip" title="Derecha" data-placement="right">Derecha</a>
+      </li>
+      <li><a href="#" class="mitooltip" title="Arriba" data-placement="top">Arriba</a>
+      </li>
+      <li><a href="#" class="mitooltip" title="Abajo" data-placement="bottom">Abajo</a>
+      </li>
+    </ul>
+    <br>
+    <button class="btn btn-default" id="btn_show_tooltips">Show tooltips</button>
+  </div>
+
+  <script>
+  var tooltips_showing = false;
+  $('.mitooltip').tooltip();
+  $('#btn_show_tooltips').click(function() {
+    if (tooltips_showing) {
+      $('.mitooltip').tooltip('hide');
+      $('#btn_show_tooltips').text('Show tooltips');
+    } else {
+      $('.mitooltip').tooltip('show');
+      $('#btn_show_tooltips').text('Hide tooltips');
+    }
+    tooltips_showing = !tooltips_showing;
+  });
+  </script>
+</body>
+
+</html>

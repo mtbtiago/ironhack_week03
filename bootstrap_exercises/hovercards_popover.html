@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- http://www.taringa.net/posts/videos/17532834/Curso-de-Bootstrap-3-1-Video-Tutoriales-Espanol.html -->
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hovercards (popover)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="../jquery/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="../bootstrap-3.3.2-dist/css/bootstrap.css">
+  <script src="../bootstrap-3.3.2-dist/js/bootstrap.js">
+  </script>
+</head>
+
+<body>
+  <div class="container" style="margin-top: 60px; width: 720px;">
+    <button type="button" rel="popover" class="btn btn-primary" data-container="body" data-toggle="popover" data-placement="bottom" title="Hola, soy un Popover" data-content="Hola, este es el <strong>contenido</strong> de pop over">Pophover</button>
+    
+  </div>
+
+  <script>
+    $('[rel="popover"]').popover({
+      trigger: 'hover', // click | hover | focus | manual
+      html: true,
+      delay: 500
+    });
+  </script>
+</body>
+
+</html>
